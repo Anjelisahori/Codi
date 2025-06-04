@@ -1,0 +1,13 @@
+@import url('./modules/variables.css');
+@import url('./modules/components.css');
+
+body {
+  margin: 0;
+  font-family: 'Roboto Variable', sans-serif;
+  background-color: var(--bg);
+  color: var(--text);
+}
+
+main {
+  padding: 1rem;
+}
