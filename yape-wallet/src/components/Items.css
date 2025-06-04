@@ -1,0 +1,172 @@
+/* Estilo para la lista de funcionalidades */
+.items-list {
+  display: flex;
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan en múltiples filas si es necesario */
+  justify-content: space-between; /* Distribuye las tarjetas de forma equitativa */
+  gap: 20px; /* Espacio entre las tarjetas */
+  margin-top: 50px;
+  padding: 20px; /* Espacio dentro del contenedor */
+  align-items: flex-start; /* Asegura que las tarjetas se alineen al principio */
+}
+
+/* Estilo para cada tarjeta de funcionalidad */
+.item-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 350px; /* Controla el tamaño máximo de cada tarjeta */
+  width: 100%; /* Se ajusta al 100% de su contenedor */
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+}
+
+/* Efecto hover sobre cada tarjeta */
+.item-card:hover {
+  transform: translateY(-8px); /* Mueve la tarjeta hacia arriba cuando se pasa el mouse */
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15); /* Aumenta la sombra para un efecto de elevación */
+}
+
+/* Imagen dentro de la tarjeta */
+.item-card img {
+  width: 100%;
+  height: 200px; /* Ajusta la altura de las imágenes */
+  object-fit: cover; /* Hace que las imágenes se ajusten al contenedor sin distorsionarse */
+  border-radius: 10px;
+  margin-bottom: 15px; /* Espacio debajo de la imagen */
+}
+
+/* Título de la funcionalidad */
+.item-card h3 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #4b006e; /* Color para el título */
+  font-weight: 600; /* Negrita */
+}
+
+/* Descripción de la funcionalidad */
+.item-card p {
+  color: #666; /* Color para la descripción */
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  height: 80px; /* Controla la altura de la descripción */
+  overflow: hidden; /* Oculta el contenido que no cabe */
+  text-overflow: ellipsis; /* Añade puntos suspensivos al final si la descripción es demasiado larga */
+}
+
+/* Estilo para el botón de favoritos */
+.favorite-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  color: #888;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Cambio de color cuando el botón está activo */
+.favorite-button.active {
+  color: gold; /* Color dorado cuando se marca como favorito */
+}
+/* Estilo para la lista de funcionalidades */
+.items-list {
+  display: flex; /* Usamos flexbox para las filas */
+  flex-wrap: wrap; /* Permite que las tarjetas se envuelvan si el espacio no es suficiente */
+  gap: 20px; /* Espaciado entre las tarjetas */
+  margin-top: 50px;
+  padding: 20px;
+  justify-content: center; /* Alinea las tarjetas al centro */
+}
+
+/* Estilo para cada tarjeta de funcionalidad */
+.item-card {
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  transition: transform 0.3s ease;
+  max-width: 350px; /* Máximo tamaño de la tarjeta */
+  flex: 1 1 300px; /* Cada tarjeta ocupará al menos 300px y se ajustará si hay más espacio */
+  text-align: center;
+  padding: 15px;
+  position: relative;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  border: 2px solid #ddd;
+}
+
+/* Efecto hover sobre cada tarjeta */
+.item-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Imagen dentro de la tarjeta */
+.item-image {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+/* Título de la funcionalidad */
+.item-card h3 {
+  font-size: 1.3rem;
+  margin: 10px 0;
+  color: #4b006e;
+  font-weight: 600;
+}
+
+/* Descripción de la funcionalidad */
+.item-card p {
+  color: #666;
+  font-size: 1rem;
+  margin-bottom: 15px;
+  line-height: 1.4;
+  height: 80px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+/* Estilo para el botón de favoritos */
+.favorite-button {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  background-color: transparent;
+  border: none;
+  color: #888;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: color 0.3s;
+}
+
+/* Cambio de color cuando el botón está activo */
+.favorite-button.active {
+  color: gold;
+}
+/* Estilo para mostrar el mensaje de favorito añadido */
+.favorite-message {
+  background-color: #4b006e;
+  color: white;
+  font-size: 1.2rem;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 20px;
+  text-align: center;
+  width: 100%;
+  max-width: 300px;
+  margin-left: auto;
+  margin-right: auto;
+  transition: opacity 0.3s ease;
+}
